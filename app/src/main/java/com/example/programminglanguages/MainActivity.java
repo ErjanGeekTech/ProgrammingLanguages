@@ -13,7 +13,6 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
-    LanguagesModel model;
     LanguagesAdapter adapter;
 
     @Override
