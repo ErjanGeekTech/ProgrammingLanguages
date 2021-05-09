@@ -39,7 +39,7 @@ public class LanguagesAdapter extends RecyclerView.Adapter<LanguagesAdapter.Lang
     public void onBindViewHolder(@NonNull LanguagesViewHolder holder, int position) {
         holder.txtTitle.setText(list.get(position).getName());
         holder.imageView.setImageResource(list.get(position).getImage());
-        holder.imageView.setOnClickListener(new View.OnClickListener() {
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, AboutItemActivity.class);
